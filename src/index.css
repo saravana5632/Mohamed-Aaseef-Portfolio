@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@property --theme-primary {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #168bff;
+}
+
+@property --theme-secondary {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #ff1744;
+}
+
+@property --theme-accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #00e5ff;
+}
+
+:root {
+  --theme-primary: #168bff;
+  --theme-primary-rgb: 22, 139, 255;
+  --theme-secondary: #ff1744;
+  --theme-secondary-rgb: 255, 23, 68;
+  --theme-accent: #00e5ff;
+  --theme-accent-rgb: 0, 229, 255;
+
+  transition: --theme-primary 2s ease-in-out,
+              --theme-secondary 2s ease-in-out,
+              --theme-accent 2s ease-in-out;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #030509;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Smooth Theme Transitions for Accent Elements */
+.theme-transition {
+  transition: color 1.8s ease-in-out,
+              background-color 1.8s ease-in-out,
+              border-color 1.8s ease-in-out,
+              box-shadow 1.8s ease-in-out,
+              stroke 1.8s ease-in-out,
+              fill 1.8s ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #030509;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d1420;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.25);
+  transition: border-color 1.8s ease, background 1.8s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-primary);
+}
+
+/* Futuristic Glow & Shadow Utilities with Dynamic CSS Variables */
+.glow-primary-sm {
+  box-shadow: 0 0 15px rgba(var(--theme-primary-rgb), 0.25);
+  transition: box-shadow 1.8s ease-in-out;
+}
+
+.glow-primary-md {
+  box-shadow: 0 0 25px rgba(var(--theme-primary-rgb), 0.4);
+  transition: box-shadow 1.8s ease-in-out;
+}
+
+.glow-secondary-sm {
+  box-shadow: 0 0 15px rgba(var(--theme-secondary-rgb), 0.25);
+  transition: box-shadow 1.8s ease-in-out;
+}
+
+.glow-secondary-md {
+  box-shadow: 0 0 25px rgba(var(--theme-secondary-rgb), 0.4);
+  transition: box-shadow 1.8s ease-in-out;
+}
+
+.glow-accent-sm {
+  box-shadow: 0 0 15px rgba(var(--theme-accent-rgb), 0.3);
+  transition: box-shadow 1.8s ease-in-out;
+}
+
+.glow-accent-md {
+  box-shadow: 0 0 25px rgba(var(--theme-accent-rgb), 0.45);
+  transition: box-shadow 1.8s ease-in-out;
+}
+
+.text-glow-gradient {
+  text-shadow: 0 0 20px rgba(var(--theme-primary-rgb), 0.4);
+  transition: text-shadow 1.8s ease-in-out;
+}
+
+/* Glassmorphism Surfaces */
+.glass-panel-futuristic {
+  background: rgba(10, 15, 24, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 1.8s ease, box-shadow 1.8s ease;
+}
+
+.glass-panel-hover:hover {
+  background: rgba(13, 20, 32, 0.85);
+  border-color: rgba(var(--theme-primary-rgb), 0.35);
+  box-shadow: 0 0 25px rgba(var(--theme-primary-rgb), 0.15);
+}
+
+/* Grid & Dots Patterns */
+.bg-grid-pattern {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(22, 139, 255, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Scanning animation for Identity Core */
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(400%);
+  }
+}
+
+/* Keyframes for slow ambient pulsing */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 9s infinite ease-in-out;
+}
