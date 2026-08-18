@@ -51,8 +51,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
       <div
         className={`max-w-7xl mx-auto px-4 sm:px-5 py-3 rounded-2xl transition-all duration-300 flex items-center justify-between border backdrop-blur-xl ${
           isScrolled
-            ? 'bg-[#030509]/90 border-slate-800 shadow-[0_0_25px_rgba(var(--theme-primary-rgb),0.15)]'
-            : 'bg-[#030509]/65 border-slate-800/60 shadow-[0_0_15px_rgba(0,0,0,0.6)]'
+            ? 'bg-[#050507]/90 border-zinc-800 shadow-[0_0_25px_rgba(var(--theme-primary-rgb),0.15)]'
+            : 'bg-[#050507]/70 border-zinc-800/80 shadow-[0_0_15px_rgba(0,0,0,0.6)]'
         }`}
       >
         {/* LOGO MA. */}
@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className={`py-1 transition-colors duration-300 relative ${
-                  isActive ? 'font-bold' : 'text-slate-400 hover:text-slate-200'
+                  isActive ? 'font-bold' : 'text-zinc-400 hover:text-zinc-200'
                 }`}
                 style={{
                   color: isActive ? 'var(--theme-accent)' : undefined,
@@ -118,12 +118,12 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
 
         {/* CONTROLS: THEME INDICATOR + RESUME BUTTON + MOBILE TOGGLE */}
         <div className="flex items-center gap-2.5 sm:gap-3">
-          {/* Subtle Dynamic Neon Theme Selector Dots */}
+          {/* Subtle Dynamic Theme Selector Dots */}
           <div
-            className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-[#0A0F18]/80 border border-slate-800/80 backdrop-blur-md"
-            title="Neon Color Atmosphere (Changes every 10s)"
+            className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-[#0C0C10]/90 border border-zinc-800 backdrop-blur-md"
+            title="Theme Atmosphere"
           >
-            <Palette className="w-3 h-3 text-slate-400 mr-0.5" />
+            <Palette className="w-3 h-3 text-zinc-400 mr-0.5" />
             <div className="flex items-center gap-1">
               {THEMES.map((theme, idx) => {
                 const isSelected = idx === currentThemeIndex;
@@ -162,13 +162,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
           {/* Hamburger Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-1.5 rounded-lg bg-slate-800/50 hover:bg-slate-800 border border-slate-700 text-slate-300 focus:outline-none"
+            className="md:hidden p-1.5 rounded-lg bg-zinc-800/60 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? (
-              <X className="w-5 h-5 text-slate-300" />
+              <X className="w-5 h-5 text-zinc-300" />
             ) : (
-              <Menu className="w-5 h-5 text-slate-300" />
+              <Menu className="w-5 h-5 text-zinc-300" />
             )}
           </button>
         </div>
@@ -182,13 +182,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden mt-2 bg-[#0A0F18] border border-slate-800 rounded-2xl p-4 space-y-3 shadow-2xl max-w-7xl mx-auto"
+            className="md:hidden mt-2 bg-[#0C0C10] border border-zinc-800 rounded-2xl p-4 space-y-3 shadow-2xl max-w-7xl mx-auto"
           >
             {/* Mobile Theme Dot Switcher */}
-            <div className="flex items-center justify-between px-2 py-1.5 rounded-xl bg-[#050912] border border-slate-800 text-[10px] font-mono text-slate-400">
+            <div className="flex items-center justify-between px-2 py-1.5 rounded-xl bg-[#050508] border border-zinc-800 text-[10px] font-mono text-zinc-400">
               <span className="flex items-center gap-1.5">
-                <Palette className="w-3 h-3 text-[#00E5FF]" />
-                <span>NEON ATMOSPHERE</span>
+                <Palette className="w-3 h-3 text-[#EF4444]" />
+                <span>RED THEMES</span>
               </span>
               <div className="flex items-center gap-1.5">
                 {THEMES.map((theme, idx) => {
@@ -220,8 +220,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
                     onClick={(e) => handleNavClick(e, link.href)}
                     className={`px-3 py-2 rounded-xl text-xs uppercase tracking-wider font-mono transition-all ${
                       isActive
-                        ? 'bg-slate-800/80 text-[#00E5FF] border border-[#00E5FF]/40 font-bold'
-                        : 'text-slate-300 hover:bg-slate-800/50 hover:text-white'
+                        ? 'bg-zinc-800/90 text-[#EF4444] border border-[#EF4444]/40 font-bold'
+                        : 'text-zinc-300 hover:bg-zinc-800/50 hover:text-white'
                     }`}
                   >
                     {link.name}
@@ -229,7 +229,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onOpenResumeModal
                 );
               })}
             </div>
-            <div className="pt-2 border-t border-slate-800">
+            <div className="pt-2 border-t border-zinc-800">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);

@@ -6,7 +6,7 @@ import { ProjectCard } from './ProjectCard';
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-20 relative bg-[#070B12]">
+    <section id="projects" className="py-20 relative bg-[#09090D]">
       {/* Background Decorative Ambient Radial */}
       <div
         className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full blur-[140px] pointer-events-none transition-all duration-1000"
@@ -18,7 +18,7 @@ export const Projects: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div
-            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0D1420] border text-[10px] font-mono font-bold uppercase tracking-[0.25em] mb-3 transition-all duration-700"
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0C0C10] border text-[10px] font-mono font-bold uppercase tracking-[0.25em] mb-3 transition-all duration-700"
             style={{
               borderColor: `rgba(var(--theme-primary-rgb), 0.3)`,
               color: `var(--theme-accent)`,
@@ -39,7 +39,7 @@ export const Projects: React.FC = () => {
               Software Showcase
             </span>
           </h2>
-          <p className="text-slate-400 text-xs sm:text-sm mt-3 uppercase tracking-wider font-mono">
+          <p className="text-zinc-400 text-xs sm:text-sm mt-3 uppercase tracking-wider font-mono">
             Highlighting real-world problem solving, team documentation, and technology concepts.
           </p>
           <div
@@ -70,7 +70,7 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#0A0F18] p-8 rounded-3xl border border-dashed border-slate-800 text-center space-y-3 hover:border-slate-700 transition-colors shadow-2xl"
+            className="bg-[#0C0C10] p-8 rounded-3xl border border-dashed border-zinc-800 text-center space-y-3 hover:border-red-500/50 transition-colors shadow-2xl"
           >
             <div
               className="w-12 h-12 rounded-full border flex items-center justify-center mx-auto transition-all duration-700"
@@ -83,10 +83,10 @@ export const Projects: React.FC = () => {
               <PlusCircle className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-bold text-white uppercase tracking-wider font-mono">More Projects Coming Soon</h3>
-            <p className="text-slate-400 text-xs sm:text-sm max-w-md mx-auto">
+            <p className="text-zinc-400 text-xs sm:text-sm max-w-md mx-auto">
               Currently working on upcoming web applications, algorithm explorations, and full-stack software development projects.
             </p>
-            <div className="inline-block px-3 py-1 rounded-full bg-[#030509] border border-slate-800 text-[10px] font-mono text-slate-400 uppercase tracking-widest">
+            <div className="inline-block px-3 py-1 rounded-full bg-[#050508] border border-zinc-800 text-[10px] font-mono text-zinc-400 uppercase tracking-widest">
               Future projects populate from <code style={{ color: `var(--theme-accent)` }}>portfolioData.ts</code>
             </div>
           </motion.div>

@@ -101,11 +101,11 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
           {/* Skip Intro Button */}
           <button
             onClick={handleSkip}
-            className="fixed bottom-6 right-6 z-[105] inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0A0F18]/80 hover:bg-[#168BFF]/20 border border-slate-800 hover:border-[#00E5FF]/50 text-slate-400 hover:text-white text-[10px] font-mono uppercase tracking-widest transition-all backdrop-blur-md shadow-lg group"
+            className="fixed bottom-6 right-6 z-[105] inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0C0C10]/80 hover:bg-[#EF4444]/20 border border-zinc-800 hover:border-[#EF4444]/50 text-zinc-400 hover:text-white text-[10px] font-mono uppercase tracking-widest transition-all backdrop-blur-md shadow-lg group"
             aria-label="Skip Introduction"
           >
             <span>SKIP INTRO</span>
-            <FastForward className="w-3 h-3 text-[#00E5FF] group-hover:translate-x-0.5 transition-transform" />
+            <FastForward className="w-3 h-3 text-[#EF4444] group-hover:translate-x-0.5 transition-transform" />
           </button>
 
           {/* Main Centered Visual Container */}
@@ -114,12 +114,12 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
             {/* Stage 1-3: Energy Point -> Geometric Rings -> Central MA Core */}
             <div className="relative flex items-center justify-center my-6 min-h-[160px]">
               
-              {/* Step 1: Tiny Cyan Energy Point */}
+              {/* Step 1: Red Energy Point */}
               <motion.div
                 initial={{ scale: 0, opacity: 1 }}
                 animate={{ scale: [0, 1.8, 1], opacity: [0, 1, 0.8] }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="absolute w-3 h-3 rounded-full bg-[#00E5FF] shadow-[0_0_20px_#00E5FF]"
+                className="absolute w-3 h-3 rounded-full bg-[#EF4444] shadow-[0_0_20px_#EF4444]"
               />
 
               {/* Step 2: Thin Geometric Rings Construct Around It */}
@@ -127,13 +127,13 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
                 initial={{ scale: 0, opacity: 0, rotate: 0 }}
                 animate={{ scale: 1, opacity: 0.7, rotate: 360 }}
                 transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                className="absolute w-32 h-32 rounded-full border border-dashed border-[#168BFF]/50 pointer-events-none"
+                className="absolute w-32 h-32 rounded-full border border-dashed border-[#EF4444]/40 pointer-events-none"
               />
               <motion.div
                 initial={{ scale: 0, opacity: 0, rotate: 0 }}
                 animate={{ scale: 1, opacity: 0.5, rotate: -360 }}
                 transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                className="absolute w-44 h-44 rounded-full border border-t-[#00E5FF] border-b-[#FF1744] border-l-transparent border-r-transparent pointer-events-none"
+                className="absolute w-44 h-44 rounded-full border border-t-[#EF4444] border-b-[#991B1B] border-l-transparent border-r-transparent pointer-events-none"
               />
 
               {/* Technical Extending Circuit Lines */}
@@ -154,7 +154,7 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="w-24 h-24 rounded-full bg-[#080E18] border border-[#00E5FF]/40 shadow-[0_0_35px_rgba(22,139,255,0.3)] flex flex-col items-center justify-center relative overflow-hidden group z-10"
+                className="w-24 h-24 rounded-full bg-[#0A0A0E] border border-[#EF4444]/40 shadow-[0_0_35px_rgba(239,68,68,0.3)] flex flex-col items-center justify-center relative overflow-hidden group z-10"
               >
                 <div
                   className="absolute inset-0 opacity-80 transition-all duration-700"
@@ -170,7 +170,7 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
                 >
                   MA.
                 </span>
-                <span className="text-[8px] font-mono text-slate-400 uppercase tracking-widest relative z-10 mt-0.5">
+                <span className="text-[8px] font-mono text-zinc-400 uppercase tracking-widest relative z-10 mt-0.5">
                   DEV.OS
                 </span>
               </motion.div>
@@ -190,7 +190,7 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
 
               {/* Status Indicator */}
               <div
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A0F18] border text-[10px] font-mono uppercase tracking-widest transition-all duration-700"
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0C0C10] border text-[10px] font-mono uppercase tracking-widest transition-all duration-700"
                 style={{
                   borderColor: `rgba(var(--theme-primary-rgb), 0.3)`,
                   boxShadow: `0 0 15px rgba(var(--theme-primary-rgb), 0.1)`,
@@ -203,7 +203,7 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
                 )}
                 <span
                   className="font-bold transition-colors duration-700"
-                  style={{ color: isSystemReady ? `var(--theme-accent)` : '#94A3B8' }}
+                  style={{ color: isSystemReady ? `var(--theme-accent)` : '#a1a1aa' }}
                 >
                   {statusMessage}
                 </span>
@@ -212,16 +212,16 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
 
             {/* Progress Bar & Telemetry */}
             <div className="space-y-1.5 pt-2 max-w-xs mx-auto">
-              <div className="w-full h-1.5 bg-[#0A0F18] rounded-full overflow-hidden border border-slate-800 p-[1px]">
+              <div className="w-full h-1.5 bg-[#0C0C10] rounded-full overflow-hidden border border-zinc-800 p-[1px]">
                 <div
-                  className="h-full rounded-full transition-all duration-75 ease-out shadow-[0_0_10px_rgba(0,229,255,0.6)]"
+                  className="h-full rounded-full transition-all duration-75 ease-out shadow-[0_0_10px_rgba(239,68,68,0.6)]"
                   style={{
                     width: `${progress}%`,
                     backgroundImage: `linear-gradient(to right, var(--theme-secondary), var(--theme-primary), var(--theme-accent))`,
                   }}
                 />
               </div>
-              <div className="flex justify-between items-center text-[9px] font-mono text-slate-500 uppercase tracking-wider">
+              <div className="flex justify-between items-center text-[9px] font-mono text-zinc-500 uppercase tracking-wider">
                 <span>SYS_INIT // 2026</span>
                 <span className="font-bold" style={{ color: `var(--theme-accent)` }}>{progress}%</span>
               </div>

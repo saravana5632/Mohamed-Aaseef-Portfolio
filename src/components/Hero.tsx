@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-28 pb-16 flex items-center justify-center overflow-hidden bg-[#030509] bg-grid-pattern"
+      className="relative min-h-screen pt-28 pb-16 flex items-center justify-center overflow-hidden bg-[#050507] bg-grid-pattern"
     >
       {/* Background Ambient Radial Glows with Dynamic CSS Variables */}
       <div
@@ -117,7 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
           >
             {/* Premium Status Badge */}
             <div
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0D1420] border text-[10px] sm:text-xs font-mono font-bold uppercase tracking-[0.25em] transition-all duration-700"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C0C10] border text-[10px] sm:text-xs font-mono font-bold uppercase tracking-[0.25em] transition-all duration-700"
               style={{
                 borderColor: `rgba(var(--theme-primary-rgb), 0.3)`,
                 color: `var(--theme-accent)`,
@@ -133,7 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
 
             {/* Main Heading Hierarchy */}
             <div className="space-y-3">
-              <span className="block text-xl sm:text-2xl font-bold text-slate-300 tracking-wider font-mono">
+              <span className="block text-xl sm:text-2xl font-bold text-zinc-300 tracking-wider font-mono">
                 Hi, I'm
               </span>
 
@@ -173,7 +173,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
                     initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
-                    className="inline-flex items-center gap-2 bg-[#0A0F18] px-4 py-2 rounded-xl border border-slate-800/90 shadow-lg max-w-full flex-wrap"
+                    className="inline-flex items-center gap-2 bg-[#0C0C10] px-4 py-2 rounded-xl border border-zinc-800/90 shadow-lg max-w-full flex-wrap"
                   >
                     <span
                       className="font-mono font-bold text-xs sm:text-sm transition-colors duration-700"
@@ -204,7 +204,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
             </div>
 
             {/* Bio */}
-            <p className="text-slate-400 text-xs sm:text-sm sm:leading-relaxed leading-normal max-w-xl mx-auto lg:mx-0 font-normal">
+            <p className="text-zinc-400 text-xs sm:text-sm sm:leading-relaxed leading-normal max-w-xl mx-auto lg:mx-0 font-normal">
               {heroBio}
             </p>
 
@@ -225,7 +225,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
 
               <button
                 onClick={onOpenResumeModal}
-                className="px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-widest text-slate-200 bg-[#0A0F18] border transition-all duration-500 flex items-center gap-2.5 group"
+                className="px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-widest text-zinc-200 bg-[#0C0C10] border transition-all duration-500 flex items-center gap-2.5 group"
                 style={{
                   borderColor: `rgba(var(--theme-primary-rgb), 0.4)`,
                 }}
@@ -240,7 +240,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
 
             {/* Social Icons */}
             <div className="pt-4 flex items-center justify-center lg:justify-start gap-4">
-              <span className="text-[10px] font-mono text-slate-500 uppercase tracking-[0.2em]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.2em]">
                 CONNECT_
               </span>
               <div className="flex items-center gap-3">
@@ -248,7 +248,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
                   href={personalInfo.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-[#0A0F18] border border-slate-800 flex items-center justify-center hover:border-[#168BFF] text-slate-300 hover:text-[#00A8FF] hover:shadow-[0_0_15px_rgba(22,139,255,0.4)] transition-all cursor-pointer"
+                  className="w-10 h-10 rounded-full bg-[#0C0C10] border border-zinc-800 flex items-center justify-center hover:border-[#EF4444] text-zinc-300 hover:text-[#EF4444] hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] transition-all cursor-pointer"
                   aria-label="GitHub Profile"
                 >
                   <Github className="w-4 h-4" />
@@ -258,7 +258,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
                   href={personalInfo.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-[#0A0F18] border border-slate-800 flex items-center justify-center hover:border-[#00E5FF] text-slate-300 hover:text-[#00E5FF] hover:shadow-[0_0_15px_rgba(0,229,255,0.4)] transition-all cursor-pointer"
+                  className="w-10 h-10 rounded-full bg-[#0C0C10] border border-zinc-800 flex items-center justify-center hover:border-[#FF2E3B] text-zinc-300 hover:text-[#FF2E3B] hover:shadow-[0_0_15px_rgba(255,46,59,0.4)] transition-all cursor-pointer"
                   aria-label="LinkedIn Profile"
                 >
                   <Linkedin className="w-4 h-4" />
@@ -266,7 +266,7 @@ export const Hero: React.FC<HeroProps> = ({ introComplete, onOpenResumeModal }) 
 
                 <a
                   href={`mailto:${personalInfo.email}`}
-                  className="w-10 h-10 rounded-full bg-[#0A0F18] border border-slate-800 flex items-center justify-center hover:border-[#FF1744] text-slate-300 hover:text-[#FF1744] hover:shadow-[0_0_15px_rgba(255,23,68,0.4)] transition-all cursor-pointer"
+                  className="w-10 h-10 rounded-full bg-[#0C0C10] border border-zinc-800 flex items-center justify-center hover:border-[#DC2626] text-zinc-300 hover:text-[#DC2626] hover:shadow-[0_0_15px_rgba(220,38,38,0.4)] transition-all cursor-pointer"
                   aria-label="Send Email"
                 >
                   <Mail className="w-4 h-4" />

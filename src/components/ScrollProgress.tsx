@@ -40,9 +40,9 @@ export const ScrollProgress: React.FC<ScrollProgressProps> = ({ activeSection })
   return (
     <>
       {/* Top Fixed Thin Progress Line */}
-      <div className="fixed top-0 left-0 right-0 h-[2.5px] z-[120] bg-slate-900/60 pointer-events-none">
+      <div className="fixed top-0 left-0 right-0 h-[2.5px] z-[120] bg-black/80 pointer-events-none">
         <div
-          className="h-full transition-all duration-150 ease-out shadow-[0_0_8px_rgba(0,229,255,0.8)]"
+          className="h-full transition-all duration-150 ease-out shadow-[0_0_8px_rgba(239,68,68,0.8)]"
           style={{
             width: `${scrollPercent}%`,
             backgroundImage: `linear-gradient(to right, var(--theme-secondary), var(--theme-primary), var(--theme-accent))`,
@@ -53,7 +53,7 @@ export const ScrollProgress: React.FC<ScrollProgressProps> = ({ activeSection })
       {/* Far Right Futuristic Vertical Telemetry Module Badge (Desktop) */}
       <div className="hidden lg:flex fixed right-4 bottom-8 z-[90] flex-col items-end gap-1 font-mono text-[9px] uppercase tracking-widest pointer-events-none select-none">
         <div
-          className="px-2.5 py-1 rounded-full bg-[#050810]/90 border text-slate-300 shadow-xl backdrop-blur-md flex items-center gap-2 transition-all duration-700"
+          className="px-2.5 py-1 rounded-full bg-[#050508]/95 border text-zinc-300 shadow-xl backdrop-blur-md flex items-center gap-2 transition-all duration-700"
           style={{
             borderColor: `rgba(var(--theme-primary-rgb), 0.35)`,
             boxShadow: `0 0 12px rgba(var(--theme-primary-rgb), 0.15)`,
@@ -66,8 +66,8 @@ export const ScrollProgress: React.FC<ScrollProgressProps> = ({ activeSection })
           <span style={{ color: `var(--theme-accent)` }} className="font-bold">
             {currentModuleLabel}
           </span>
-          <span className="text-slate-500">|</span>
-          <span className="font-bold text-slate-300">{scrollPercent}%</span>
+          <span className="text-zinc-500">|</span>
+          <span className="font-bold text-zinc-300">{scrollPercent}%</span>
         </div>
       </div>
     </>

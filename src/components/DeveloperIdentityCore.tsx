@@ -17,14 +17,14 @@ import { personalInfo } from '../data/portfolioData';
 
 // Technology nodes list
 const techNodes = [
-  { id: 'java', name: 'Java', category: 'CODE', color: '#168BFF', position: 'top-left' },
-  { id: 'cpp', name: 'C++', category: 'CODE', color: '#00E5FF', position: 'top-right' },
-  { id: 'python', name: 'Python', category: 'CODE', color: '#168BFF', position: 'left-center' },
-  { id: 'react', name: 'React', category: 'WEB', color: '#00A8FF', position: 'right-center' },
-  { id: 'nodejs', name: 'Node.js', category: 'WEB', color: '#00E5FF', position: 'bottom-left' },
-  { id: 'mysql', name: 'MySQL', category: 'DATA', color: '#FF1744', position: 'bottom-right' },
-  { id: 'mongodb', name: 'MongoDB', category: 'DATA', color: '#00E5FF', position: 'top-center' },
-  { id: 'git', name: 'Git', category: 'TOOLS', color: '#FF2D55', position: 'bottom-center' },
+  { id: 'java', name: 'Java', category: 'CODE', color: '#EF4444', position: 'top-left' },
+  { id: 'cpp', name: 'C++', category: 'CODE', color: '#DC2626', position: 'top-right' },
+  { id: 'python', name: 'Python', category: 'CODE', color: '#FF2E3B', position: 'left-center' },
+  { id: 'react', name: 'React', category: 'WEB', color: '#F87171', position: 'right-center' },
+  { id: 'nodejs', name: 'Node.js', category: 'WEB', color: '#B91C1C', position: 'bottom-left' },
+  { id: 'mysql', name: 'MySQL', category: 'DATA', color: '#EF4444', position: 'bottom-right' },
+  { id: 'mongodb', name: 'MongoDB', category: 'DATA', color: '#991B1B', position: 'top-center' },
+  { id: 'git', name: 'Git', category: 'TOOLS', color: '#FF2E3B', position: 'bottom-center' },
 ];
 
 export const DeveloperIdentityCore: React.FC = () => {
@@ -64,7 +64,7 @@ export const DeveloperIdentityCore: React.FC = () => {
           setMousePos({ x: 0, y: 0 });
         }}
         style={tiltStyle}
-        className="relative bg-[#050910]/80 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-slate-800/80 shadow-[0_0_50px_rgba(22,139,255,0.08)] overflow-hidden group"
+        className="relative bg-[#0A0A0E]/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-zinc-800/80 shadow-[0_0_50px_rgba(239,68,68,0.08)] overflow-hidden group"
       >
         {/* Futuristic CSS Corner Brackets */}
         <div
@@ -111,17 +111,17 @@ export const DeveloperIdentityCore: React.FC = () => {
         />
 
         {/* Top Header Labels & DEV.OS Micro Panel */}
-        <div className="flex items-center justify-between pb-3.5 border-b border-slate-800/60 relative z-10 font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+        <div className="flex items-center justify-between pb-3.5 border-b border-zinc-800/80 relative z-10 font-mono text-[10px] text-zinc-400 uppercase tracking-widest">
           <div className="flex items-center gap-2">
             <span
               className="inline-block w-2 h-2 rounded-full animate-pulse transition-colors duration-700"
               style={{ backgroundColor: `var(--theme-accent)` }}
             />
-            <span className="text-slate-300 font-bold">DEV.OS // MA_CORE</span>
+            <span className="text-zinc-300 font-bold">DEV.OS // MA_CORE</span>
           </div>
 
           <div
-            className="px-2.5 py-1 rounded-full bg-[#03060B] border flex items-center gap-1.5 transition-all duration-700"
+            className="px-2.5 py-1 rounded-full bg-[#050508] border flex items-center gap-1.5 transition-all duration-700"
             style={{
               borderColor: `rgba(var(--theme-primary-rgb), 0.3)`,
               boxShadow: `0 0 10px rgba(var(--theme-primary-rgb), 0.1)`,
@@ -189,7 +189,7 @@ export const DeveloperIdentityCore: React.FC = () => {
 
             {/* Central MA Core Circle */}
             <div
-              className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#080E18] border flex flex-col items-center justify-center z-10 group-hover:scale-105 transition-all duration-700"
+              className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#08080C] border flex flex-col items-center justify-center z-10 group-hover:scale-105 transition-all duration-700"
               style={{
                 borderColor: `rgba(var(--theme-accent-rgb), 0.5)`,
                 boxShadow: `0 0 25px rgba(var(--theme-primary-rgb), 0.35)`,
@@ -203,7 +203,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               >
                 MA
               </span>
-              <span className="text-[8px] font-mono text-slate-400 uppercase tracking-widest mt-0.5">
+              <span className="text-[8px] font-mono text-zinc-400 uppercase tracking-widest mt-0.5">
                 DEV_CORE
               </span>
             </div>
@@ -248,7 +248,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               className="absolute top-2 left-4 pointer-events-auto transition-transform hover:scale-110 cursor-pointer"
             >
               <div
-                className="px-2.5 py-1 rounded-lg bg-[#070B12]/90 border text-[10px] font-mono text-slate-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
+                className="px-2.5 py-1 rounded-lg bg-[#0E0E12]/90 border text-[10px] font-mono text-zinc-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
                 style={{ borderColor: `rgba(var(--theme-primary-rgb), 0.4)` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full transition-colors duration-700" style={{ backgroundColor: `var(--theme-primary)` }} />
@@ -263,7 +263,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               className="absolute top-2 right-4 pointer-events-auto transition-transform hover:scale-110 cursor-pointer"
             >
               <div
-                className="px-2.5 py-1 rounded-lg bg-[#070B12]/90 border text-[10px] font-mono text-slate-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
+                className="px-2.5 py-1 rounded-lg bg-[#0E0E12]/90 border text-[10px] font-mono text-zinc-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
                 style={{ borderColor: `rgba(var(--theme-accent-rgb), 0.4)` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full transition-colors duration-700" style={{ backgroundColor: `var(--theme-accent)` }} />
@@ -278,7 +278,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               className="absolute top-1/2 -translate-y-1/2 left-0 pointer-events-auto transition-transform hover:scale-110 cursor-pointer"
             >
               <div
-                className="px-2.5 py-1 rounded-lg bg-[#070B12]/90 border text-[10px] font-mono text-slate-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
+                className="px-2.5 py-1 rounded-lg bg-[#0E0E12]/90 border text-[10px] font-mono text-zinc-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
                 style={{ borderColor: `rgba(var(--theme-primary-rgb), 0.4)` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full transition-colors duration-700" style={{ backgroundColor: `var(--theme-primary)` }} />
@@ -293,7 +293,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               className="absolute top-1/2 -translate-y-1/2 right-0 pointer-events-auto transition-transform hover:scale-110 cursor-pointer"
             >
               <div
-                className="px-2.5 py-1 rounded-lg bg-[#070B12]/90 border text-[10px] font-mono text-slate-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
+                className="px-2.5 py-1 rounded-lg bg-[#0E0E12]/90 border text-[10px] font-mono text-zinc-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
                 style={{ borderColor: `rgba(var(--theme-accent-rgb), 0.4)` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full transition-colors duration-700" style={{ backgroundColor: `var(--theme-accent)` }} />
@@ -308,7 +308,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               className="absolute bottom-4 left-6 pointer-events-auto transition-transform hover:scale-110 cursor-pointer"
             >
               <div
-                className="px-2.5 py-1 rounded-lg bg-[#070B12]/90 border text-[10px] font-mono text-slate-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
+                className="px-2.5 py-1 rounded-lg bg-[#0E0E12]/90 border text-[10px] font-mono text-zinc-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
                 style={{ borderColor: `rgba(var(--theme-accent-rgb), 0.4)` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full transition-colors duration-700" style={{ backgroundColor: `var(--theme-accent)` }} />
@@ -323,7 +323,7 @@ export const DeveloperIdentityCore: React.FC = () => {
               className="absolute bottom-4 right-6 pointer-events-auto transition-transform hover:scale-110 cursor-pointer"
             >
               <div
-                className="px-2.5 py-1 rounded-lg bg-[#070B12]/90 border text-[10px] font-mono text-slate-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
+                className="px-2.5 py-1 rounded-lg bg-[#0E0E12]/90 border text-[10px] font-mono text-zinc-200 shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-colors duration-700"
                 style={{ borderColor: `rgba(var(--theme-secondary-rgb), 0.4)` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full transition-colors duration-700" style={{ backgroundColor: `var(--theme-secondary)` }} />
@@ -334,61 +334,61 @@ export const DeveloperIdentityCore: React.FC = () => {
         </div>
 
         {/* CATEGORY RING INDICATOR */}
-        <div className="flex items-center justify-center gap-2 py-2 border-y border-slate-800/60 my-4 text-[9px] font-mono uppercase tracking-widest text-slate-400 z-10 relative">
+        <div className="flex items-center justify-center gap-2 py-2 border-y border-zinc-800/80 my-4 text-[9px] font-mono uppercase tracking-widest text-zinc-400 z-10 relative">
           <span style={{ color: `var(--theme-primary)` }} className="font-bold transition-colors duration-700">CODE</span>
-          <span className="text-slate-600">•</span>
+          <span className="text-zinc-600">•</span>
           <span style={{ color: `var(--theme-accent)` }} className="font-bold transition-colors duration-700">WEB</span>
-          <span className="text-slate-600">•</span>
+          <span className="text-zinc-600">•</span>
           <span style={{ color: `var(--theme-primary)` }} className="font-bold transition-colors duration-700">DATA</span>
-          <span className="text-slate-600">•</span>
+          <span className="text-zinc-600">•</span>
           <span style={{ color: `var(--theme-secondary)` }} className="font-bold transition-colors duration-700">TOOLS</span>
         </div>
 
         {/* IDENTITY INFORMATION MODULES GRID */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 relative z-10 pt-2">
           {/* Education */}
-          <div className="p-3 rounded-2xl bg-[#080D18]/90 border border-slate-800 hover:border-slate-700 transition-colors">
+          <div className="p-3 rounded-2xl bg-[#0D0D12]/90 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="text-[9px] font-mono uppercase tracking-wider font-bold mb-1 flex items-center gap-1 transition-colors duration-700" style={{ color: `var(--theme-primary)` }}>
               <GraduationCap className="w-3 h-3" />
               <span>EDUCATION</span>
             </div>
             <div className="text-xs font-extrabold text-white leading-tight">B.Tech CSBS</div>
-            <div className="text-[9px] font-mono text-slate-400 mt-0.5 truncate">Panimalar EC</div>
+            <div className="text-[9px] font-mono text-zinc-400 mt-0.5 truncate">Panimalar EC</div>
           </div>
 
           {/* Current Status */}
-          <div className="p-3 rounded-2xl bg-[#080D18]/90 border border-slate-800 hover:border-slate-700 transition-colors">
+          <div className="p-3 rounded-2xl bg-[#0D0D12]/90 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="text-[9px] font-mono uppercase tracking-wider font-bold mb-1 flex items-center gap-1 transition-colors duration-700" style={{ color: `var(--theme-accent)` }}>
               <Calendar className="w-3 h-3" />
               <span>CURRENT</span>
             </div>
             <div className="text-xs font-extrabold text-white leading-tight">3rd Year</div>
-            <div className="text-[9px] font-mono text-slate-400 mt-0.5">5th Semester</div>
+            <div className="text-[9px] font-mono text-zinc-400 mt-0.5">5th Semester</div>
           </div>
 
           {/* Graduation */}
-          <div className="p-3 rounded-2xl bg-[#080D18]/90 border border-slate-800 hover:border-slate-700 transition-colors">
+          <div className="p-3 rounded-2xl bg-[#0D0D12]/90 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="text-[9px] font-mono uppercase tracking-wider font-bold mb-1 flex items-center gap-1 transition-colors duration-700" style={{ color: `var(--theme-primary)` }}>
               <Layers className="w-3 h-3" />
               <span>GRADUATING</span>
             </div>
             <div className="text-xs font-extrabold text-white leading-tight">2028</div>
-            <div className="text-[9px] font-mono text-slate-400 mt-0.5">Expected</div>
+            <div className="text-[9px] font-mono text-zinc-400 mt-0.5">Expected</div>
           </div>
 
           {/* Focus */}
-          <div className="p-3 rounded-2xl bg-[#080D18]/90 border border-slate-800 hover:border-slate-700 transition-colors">
+          <div className="p-3 rounded-2xl bg-[#0D0D12]/90 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="text-[9px] font-mono uppercase tracking-wider font-bold mb-1 flex items-center gap-1 transition-colors duration-700" style={{ color: `var(--theme-secondary)` }}>
               <Zap className="w-3 h-3" />
               <span>FOCUS</span>
             </div>
             <div className="text-xs font-extrabold text-white leading-tight">Full Stack</div>
-            <div className="text-[9px] font-mono text-slate-400 mt-0.5">Software Dev</div>
+            <div className="text-[9px] font-mono text-zinc-400 mt-0.5">Software Dev</div>
           </div>
         </div>
 
         {/* SYSTEM FOOTER LABELS */}
-        <div className="mt-4 pt-3 border-t border-slate-800/60 flex items-center justify-between text-[9px] font-mono text-slate-500 uppercase tracking-widest relative z-10">
+        <div className="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-[9px] font-mono text-zinc-500 uppercase tracking-widest relative z-10">
           <span>STATUS // LEARNING</span>
           <span>LOCATION // CHENNAI</span>
           <span>ROLE // STUDENT_DEV</span>
