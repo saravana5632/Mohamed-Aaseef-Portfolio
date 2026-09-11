@@ -58,29 +58,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
       )}
 
-      {/* Featured Header Ribbon */}
-      <div className="bg-[#050508] px-6 py-3 border-b border-zinc-800/80 flex flex-wrap items-center justify-between gap-3 relative z-10 font-mono">
-        <div className="flex items-center gap-2">
-          <span
-            className="text-[9px] px-2.5 py-1 rounded-md uppercase tracking-wider border font-bold transition-all duration-700"
-            style={{
-              backgroundColor: `rgba(var(--theme-secondary-rgb), 0.15)`,
-              color: `var(--theme-secondary)`,
-              borderColor: `rgba(var(--theme-secondary-rgb), 0.35)`,
-            }}
-          >
-            PROJECT // 001
-          </span>
-          <span className="text-zinc-400 text-[10px] uppercase tracking-widest hidden sm:inline">
-            FEATURED ENGINEERING BUILD
-          </span>
-        </div>
-        <div className="text-right text-[10px] tracking-widest uppercase flex items-center gap-2">
-          <span className="text-zinc-400">STATUS:</span>
-          <span style={{ color: `var(--theme-accent)` }} className="font-bold">DEVELOPMENT</span>
-        </div>
-      </div>
-
+      
       <div className="p-6 sm:p-8 space-y-8 relative z-10">
         
         {/* Title & Links */}
@@ -110,9 +88,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </a>
             )}
 
-            <span className="px-4 py-2.5 border border-zinc-800 rounded-xl text-zinc-500 font-mono text-[10px] uppercase tracking-widest bg-[#050508]">
-              Live Demo Coming Soon
-            </span>
+      
           </div>
         </div>
 
@@ -131,10 +107,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               <span className="font-bold text-white">Community</span>
             </div>
             <span style={{ color: `var(--theme-accent)` }}>→</span>
-            <div className="px-3 py-1.5 rounded-lg bg-[#0C0C10] border border-zinc-800 flex-1 min-w-[100px]">
-              <span className="text-zinc-400 block text-[8px] uppercase">STEP 02</span>
-              <span className="font-bold text-white">Problem Report</span>
-            </div>
+            
             <span style={{ color: `var(--theme-accent)` }}>→</span>
             <div className="px-3 py-1.5 rounded-lg bg-[#0C0C10] border flex-1 min-w-[100px]" style={{ borderColor: `rgba(var(--theme-primary-rgb), 0.5)` }}>
               <span className="text-zinc-400 block text-[8px] uppercase">STEP 03</span>
