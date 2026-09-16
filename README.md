@@ -308,7 +308,8 @@ Before submitting a Pull Request:
 
 ## License
 
-No license file is currently specified in this project.
+MIT
+
 
 ## Author
 
